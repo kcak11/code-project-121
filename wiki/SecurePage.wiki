@@ -1,0 +1,9 @@
+<table><tr>
+<td valign="center"><img src="https://raw.githubusercontent.com/kcak11/code-project-121/master/web/resources/k11b-static/images/gcode_logo.png" width="56"/></td>
+<td valign="center"><font face="Verdana" size="4" color="#0e85cd">
+_*Restricted Access*_
+</font></td>
+</tr></table>
+<br/>
+<font face="Verdana" size="4" color="#0e85cd">
+(send mail to kcak11@gmail.com for access request)</font>

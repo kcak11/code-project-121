@@ -1,0 +1,17 @@
+<table><tr>
+<td><img src="https://raw.githubusercontent.com/kcak11/code-project-121/master/web/resources/k11b-static/images/gcode_logo.png" width="56"/></td>
+<td><font face="Verdana" size="6" color="#0e85cd">_HTTP Trace_</font></td>
+</tr></table>
+
+<code language="js">
+javascript:(function(){var s=document.createElement("script");s.setAttribute("type","text/javascript");s.setAttribute("src","http://cdn.ashishkumarkc.com/fetch?rID="+(new Date()).getTime()+"&type=text/javascript&furl=https://raw.githubusercontent.com/kcak11/code-project-121/master/web/utility/httptrace.js");document.body.appendChild(s);}());
+</code>
+= *How to use ?* =
+1. Copy+Paste the above code in your browser and make a bookmark
+<br/>2. Click the newly created bookmark
+<br/>*If you like this utility, then please hit the "+1" button below.*
+<table width="100%">
+<tr>
+<td width="60%"></td>
+<td align="right">Report any bugs / suggestions / queries to *"computer11guy@gmail.com"*<br/><g:plusone size="medium"></g:plusone></td>
+</tr></table>
