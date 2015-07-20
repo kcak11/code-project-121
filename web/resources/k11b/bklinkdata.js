@@ -26,6 +26,7 @@ window.bkLinkData={
   "ESP Wiki":{"auth":"yes","dest":"http://goo.gl/XOlH2s"},
   "***** ATG Dev Environment *****":"http://goo.gl/2OjVI5",
   "ATG - BCC Env Mapping":{"auth":"yes","dest":"http://goo.gl/dAq6Cu"},
+  "GSS Environment Links":{"auth":"yes","dest":"http://goo.gl/VEcxV2"},
   "RESET NON-PROD PW 1":{"auth":"yes","dest":"http://goo.gl/CdYb2M"},
   "RESET NON-PROD PW 2":{"auth":"yes","dest":"http://goo.gl/Tb8pBl"},
   "Software Central (VZDelivery)":{"auth":"yes","dest":"http://goo.gl/eR1Sm8"},
