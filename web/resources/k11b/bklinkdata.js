@@ -18,6 +18,8 @@ window.bkLinkData={
   "VZ About You":{"auth":"yes","dest":"http://goo.gl/RSu02T"},
   "VZ Work Tools":{"auth":"yes","dest":"http://goo.gl/2o67P6"},
   "D-Cloud TPA":{"auth":"yes","dest":"http://goo.gl/ml3NTg"},
+  "UI Team Assignments":"divider",
+  "UI Team Resource Assignments":{"auth":"yes","dest":"http://goo.gl/jGZQ1R"},
   "Market Analysis":"divider",
   "Verizon / AT & T / Sprint / T-Mobile":"http://goo.gl/qxI7E5",
   "Important Links:":"divider",
