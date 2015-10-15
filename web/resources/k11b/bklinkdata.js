@@ -10,7 +10,8 @@ window.bkLinkData={
   "Holidays":{"auth":"yes","dest":"http://goo.gl/13q9Se"},
   "VZ Learn":{"auth":"yes","dest":"http://goo.gl/3IfhzB"},
   "Talent Development Portal":{"auth":"yes","dest":"http://goo.gl/BvLOqQ"},
-  "Quality Center (QC-ALM)":{"auth":"yes","dest":"http://goo.gl/Ghk4EE"},
+  /*"Quality Center (QC-ALM)":{"auth":"yes","dest":"http://goo.gl/Ghk4EE"},*/
+  "Quality Center (QC-ALM)":{"auth":"yes","dest":"https://goo.gl/g706eG"},
   "SiteCatalyst Reports":"http://goo.gl/nhEv2V",
   "Leave Management System (LMS)":{"auth":"yes","dest":"http://goo.gl/oFoF11"},
   "HR Live":{"auth":"yes","dest":"http://goo.gl/T8wPZN"},
