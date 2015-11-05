@@ -18,6 +18,7 @@ window.bkLinkData={
   "Verizon Helpdesk Portal":{"auth":"yes","dest":"http://goo.gl/kJOMZX"},
   "VZ About You":{"auth":"yes","dest":"http://goo.gl/RSu02T"},
   "VZ Work Tools":{"auth":"yes","dest":"http://goo.gl/2o67P6"},
+  "VZ Brand Central":"https://goo.gl/yVOGcq",
   "D-Cloud TPA":{"auth":"yes","dest":"http://goo.gl/ml3NTg"},
   "UI Team Assignments":"divider",
   "UI Team Resource Assignments":{"auth":"yes","dest":"http://goo.gl/jGZQ1R"},
