@@ -71,7 +71,7 @@
 							+ (new Date()).getTime()
 							+ '&type=text/javascript&furl=https://raw.githubusercontent.com/kcak11/code-project-121/master/web/playground-k/playground-k-master.js?ts='
 							+ (new Date()).getTime());
-		} else if (akweb['hostname'] == 'm.ashishkumarkc.com') {
+		} else if (akweb['hostname'] == 'm.ashishkumarkc.com' || akweb['hostname']=='') {
 			akweb
 			.importScript('http://cdn.ashishkumarkc.com/fetch?rID='
 					+ (new Date()).getTime()
@@ -105,8 +105,11 @@
 			try {
 				document.getElementsByTagName("body")[0].onload = function() {
 					if (window._externalContentHash !== "Zzh5YTNtZjBpZGM1djI2NzdlNGdqaDlxZ2I4aHYyMmp4NDE3cHllcWR1eWFxcWRtdnJueHhkMTh5aXJ4NDc5MDBkdDE4bW1kcDFucnEweGt3") {
-						document.getElementById("retry_message").innerHTML = "<span style=\"font-size:28px;\">Oops !! There was a problem loading content.</span> <br/>Please <span onclick=\"window.top.location=window.top.location;\" style=\"color:blue;cursor:pointer;text-decoration:underline;\">refresh</span> your browser to try again.<br/>If you still see this message, then probably a Firewall might be blocking your access.";
-					}
+					setTimeout(function(){
+						if (window._externalContentHash !== "Zzh5YTNtZjBpZGM1djI2NzdlNGdqaDlxZ2I4aHYyMmp4NDE3cHllcWR1eWFxcWRtdnJueHhkMTh5aXJ4NDc5MDBkdDE4bW1kcDFucnEweGt3") {
+							document.getElementById("retry_message").innerHTML = "<span style=\"font-size:28px;\">Oops !! There was a problem loading content.</span> <br/>Please <span onclick=\"window.top.location=window.top.location;\" style=\"color:blue;cursor:pointer;text-decoration:underline;\">refresh</span> your browser to try again.<br/>If you still see this message, then probably a Firewall might be blocking your access.";
+						}
+					},3993);
 				};
 			} catch (_) {
 			}
