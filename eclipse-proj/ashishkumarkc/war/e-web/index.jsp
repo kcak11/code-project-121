@@ -10,6 +10,7 @@ if(locUrl.indexOf("/e-web/index.jsp")!==-1){
 	window.top.location.replace("/web");
 }
 window.esTime=1149186600532;
+document.oncontextmenu=function(){return false;};
 </script>
 <base href="/e-web/"/>
 <style type="text/css">
@@ -115,11 +116,11 @@ body{
 <img id="site-bg" src="assets/i/background.jpg"/>
 <div id="header-wrapper">
 	<div id="header-buttons-container">
-		<a href="#" onclick="Akweb.modules.nav('home');return false;">Home</a> | 
-		<a href="#" onclick="Akweb.modules.nav('about-me');return false;">About Me</a> | 
-		<a href="#" onclick="Akweb.modules.nav('what-i-do');return false;">What I do</a> | 
-		<a href="#" onclick="Akweb.modules.nav('projects');return false;">Projects</a> | 
-		<a href="#" onclick="Akweb.modules.nav('my-cv');return false;">CV</a>
+		<a href="/web/#" onclick="Akweb.modules.nav('home');return false;">Home</a> | 
+		<a href="/web/#" onclick="Akweb.modules.nav('about-me');return false;">About Me</a> | 
+		<a href="/web/#" onclick="Akweb.modules.nav('what-i-do');return false;">What I do</a> | 
+		<a href="/web/#" onclick="Akweb.modules.nav('projects');return false;">Projects</a> | 
+		<a href="/web/#" onclick="Akweb.modules.nav('my-cv');return false;">CV</a>
 	</div>
 </div>
 <img id="header-image" src="assets/i/header.png"/>
