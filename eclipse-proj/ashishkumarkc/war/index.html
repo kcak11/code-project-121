@@ -32,10 +32,10 @@
 			if((""+window.top.location).indexOf("nooverride=true")==-1 && window.isMobileDevice){
 				url="http://m.ashishkumarkc.com"
 			}
-			window.top.location = url;
+			window.top.location.replace(url);
 		}
 		if ((""+window.top.location).indexOf("nooverride=true")==-1 && window.isMobileDevice && ("" + window.top.location.hostname).toLowerCase() == "www.ashishkumarkc.com") {
-			window.top.location="http://m.ashishkumarkc.com";
+			window.top.location.replace("http://m.ashishkumarkc.com");
 		}
 	</script>
 	<script type='text/javascript'>
