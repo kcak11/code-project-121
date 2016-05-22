@@ -3,16 +3,17 @@
 <head>
 <title>TimeZone Planner</title>
 <style type="text/css">
-body{font-family:Verdana;font-size:12px;}
+body{font-family:Verdana;font-size:12px;cursor:default;}
 .pageHead{font-size:22px;font-weight:bold;}
 .tzPlanner{border:1px solid #000;border-spacing:0px;border-collapse:collapse;}
 .tzPlanner td{border:1px solid #000;padding-left:20px;padding-right:20px;}
 .tzPlanner td.colHead{background-color:#00a2e8;color:#fff;}
 .tzPlanner .tzLabel{font-size:10px;}
+a{color:#00a2e8};
 </style>
 </head>
 <body>
-<div id="container" style="text-align:center;heigxht:400px;overflow-y:auto;border:1px solid #000;"></div>
+<div id="container" style="text-align:center;"></div>
 <script type="text/javascript">
 document.oncontextmenu=function(e){return false;};
 window.kCommon={};
@@ -120,7 +121,8 @@ window.KTimeZone={
 	pst:{label:"PST",time:kCommon.baseTime-((13*kCommon.hour)+(30*kCommon.minute)),timezonetype:"standard"},
 	pdt:{label:"PDT",time:kCommon.baseTime-((12*kCommon.hour)+(30*kCommon.minute)),timezonetype:"daylight"}
 };
-var markup="<span class=\"pageHead\">TimeZone Planner</span><br/><table class=\"tzPlanner\" align=\"center\">";
+var markup="<span class=\"pageHead\">TimeZone Planner</span><br/><span>powered by <a href=\"http://www.ashishkumarkc.com\" target=\"_blank\">Ashish's Web</a></span><br/><br/>";
+markup+="<table class=\"tzPlanner\" align=\"center\">";
 markup+="<tr>";
 for(var obj in KTimeZone){
 	markup+="<td class=\"colHead\">"+KTimeZone[obj].label+"</td>";
