@@ -1,8 +1,0 @@
-[Version]
-Signature=$CHICAGO$
-
-[DefaultInstall]
-DelReg=Del.Settings
-
-[Del.Settings]
-HKCU,Software\Microsoft\Windows\CurrentVersion\Policies\System,DisableRegistryTools
