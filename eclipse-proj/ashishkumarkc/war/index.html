@@ -5,7 +5,7 @@
 <meta content='width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=0' name='viewport' />
 <meta name="theme-color" content="#6593E4">
 <title>Ashish's Web</title>
-<link href='http://cdn.ashishkumarkc.com/resources/favicon.ico' rel='icon' type='image/x-icon' />
+<link href='//cdn.ashishkumarkc.com/resources/favicon.ico' rel='icon' type='image/x-icon' />
 </head>
 <body>
 	<script type="text/javascript">
@@ -31,11 +31,11 @@
 		}
 	</script>
 	<script type="text/javascript">
-		if (("" + _customWindow.location.hostname).toLowerCase() == "ashishkumarkc.com") {
+		if (("" + _customWindow.location.hostname).toLowerCase() === "ashishkumarkc.com") {
 			document.documentElement.style.display = "none";
-			var url = "http://www.ashishkumarkc.com";
+			var url = _customWindow.location.protocol+"//www.ashishkumarkc.com";
 			if (("" + _customWindow.location).indexOf("nooverride=true") == -1 && window.isMobileDevice) {
-				url = "http://m.ashishkumarkc.com"
+				url = _customWindow.location.protocol+"//m.ashishkumarkc.com"
 			}
 			if (renderViaKcak11) {
 				url += "/?rendervia=kcak11";
@@ -44,12 +44,12 @@
 		}
 		if (("" + _customWindow.location).indexOf("nooverride=true") == -1 && window.isMobileDevice && ("" + _customWindow.location.hostname).toLowerCase() == "www.ashishkumarkc.com") {
 			var customSuffix = (renderViaKcak11) ? "/?rendervia=kcak11" : ""
-			_customWindow.location.replace("http://m.ashishkumarkc.com" + customSuffix);
+			_customWindow.location.replace(_customWindow.location.protocol+"//m.ashishkumarkc.com" + customSuffix);
 		}
 	</script>
 	<script type='text/javascript'>
 		/*<![CDATA[*/
-		(new Image()).src = "http://cdn.ashishkumarkc.com/fetch?rID=" + (new Date()).getTime() + "&type=image/png&furl=http://cdn.ashishkumarkc.com/resources/favicon.ico";
+		//(new Image()).src = "http://cdn.ashishkumarkc.com/fetch?rID=" + (new Date()).getTime() + "&type=image/png&furl=http://cdn.ashishkumarkc.com/resources/favicon.ico";
 		window.akweb = {
 			'importScript' : function(scriptSrc) {
 				var scriptElem = document.createElement('script');
@@ -61,18 +61,18 @@
 		};
 		if (akweb['hostname'] == 'bookmarks.ashishkumarkc.com') {
 			window.executeNow = function() {
-				akweb.importScript('http://kcak11.github.io/cdn/resources/k11b/showblinks.js?ts=' + (new Date()).getTime());
+				akweb.importScript('//kcak11.github.io/cdn/resources/k11b/showblinks.js?ts=' + (new Date()).getTime());
 			};
-			akweb.importScript('http://kcak11.github.io/cdn/resources/k11b/bklinkdata.js?ts=' + (new Date()).getTime());
+			akweb.importScript('//kcak11.github.io/cdn/resources/k11b/bklinkdata.js?ts=' + (new Date()).getTime());
 		} else if (akweb['hostname'] == 'playground-k.ashishkumarkc.com') {
-			akweb.importScript('http://kcak11.github.io/cdn/playground-k/playground-k-master.js?ts=' + (new Date()).getTime());
+			akweb.importScript('//kcak11.github.io/cdn/playground-k/playground-k-master.js?ts=' + (new Date()).getTime());
 		} else if (akweb['hostname'] == 'm.ashishkumarkc.com' || akweb['hostname'] == '') {
-			akweb.importScript('http://kcak11.github.io/cdn/resources/k11b/blog-mobile.js?ts=' + (new Date()).getTime());
+			akweb.importScript('//kcak11.github.io/cdn/resources/k11b/blog-mobile.js?ts=' + (new Date()).getTime());
 		} else {
 			window.executeNow = function() {
-				akweb.importScript('http://kcak11.github.io/cdn/resources/k11b/framework.js?ts=' + (new Date()).getTime());
+				akweb.importScript('//kcak11.github.io/cdn/resources/k11b/framework.js?ts=' + (new Date()).getTime());
 			};
-			akweb.importScript('http://kcak11.github.io/cdn/resources/k11b/framework11coder.js?ts=' + (new Date()).getTime());
+			akweb.importScript('//kcak11.github.io/cdn/resources/k11b/framework11coder.js?ts=' + (new Date()).getTime());
 		}
 		/*]]>*/
 	</script>
