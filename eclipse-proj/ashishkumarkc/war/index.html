@@ -35,16 +35,16 @@
 			document.documentElement.style.display = "none";
 			var url = _customWindow.location.protocol+"//www.ashishkumarkc.com";
 			if (("" + _customWindow.location).indexOf("nooverride=true") == -1 && window.isMobileDevice) {
-				url = _customWindow.location.protocol+"//m.ashishkumarkc.com"
+				url = _customWindow.location.protocol+"//www.ashishkumarkc.com/?mobile=true"
 			}
 			if (renderViaKcak11) {
-				url += "/?rendervia=kcak11";
+				url += url.indexOf("?")===-1 ? "/?rendervia=kcak11" : "&rendervia=kcak11";
 			}
 			_customWindow.location.replace(url);
 		}
-		if (("" + _customWindow.location).indexOf("nooverride=true") == -1 && window.isMobileDevice && ("" + _customWindow.location.hostname).toLowerCase() == "www.ashishkumarkc.com") {
-			var customSuffix = (renderViaKcak11) ? "/?rendervia=kcak11" : ""
-			_customWindow.location.replace(_customWindow.location.protocol+"//m.ashishkumarkc.com" + customSuffix);
+		if (("" + _customWindow.location).indexOf("nooverride=true") == -1 && window.isMobileDevice && ("" + _customWindow.location.hostname).toLowerCase() === "www.ashishkumarkc.com" && _customWindow.location.href.indexOf("mobile=true")===-1) {
+			var customSuffix = (renderViaKcak11) ? "/?mobile=true&rendervia=kcak11" : ""
+			_customWindow.location.replace(_customWindow.location.protocol+"//www.ashishkumarkc.com" + customSuffix);
 		}
 	</script>
 	<script type='text/javascript'>
@@ -57,7 +57,8 @@
 				scriptElem.src = scriptSrc;
 				document.getElementsByTagName('head')[0].appendChild(scriptElem);
 			},
-			hostname : ('' + _customWindow.location.hostname).toLowerCase()
+			hostname : ('' + _customWindow.location.hostname).toLowerCase(),
+			url : _customWindow.location.href
 		};
 		if (akweb['hostname'] == 'bookmarks.ashishkumarkc.com') {
 			window.executeNow = function() {
@@ -66,7 +67,7 @@
 			akweb.importScript('//kcak11.github.io/cdn/resources/k11b/bklinkdata.js?ts=' + (new Date()).getTime());
 		} else if (akweb['hostname'] == 'playground-k.ashishkumarkc.com') {
 			akweb.importScript('//kcak11.github.io/cdn/playground-k/playground-k-master.js?ts=' + (new Date()).getTime());
-		} else if (akweb['hostname'] == 'm.ashishkumarkc.com' || akweb['hostname'] == '') {
+		} else if ((akweb['hostname'] == 'www.ashishkumarkc.com' && akweb['url'].indexOf("mobile=true")!==-1) || akweb['hostname'] == '') {
 			akweb.importScript('//kcak11.github.io/cdn/resources/k11b/blog-mobile.js?ts=' + (new Date()).getTime());
 		} else {
 			window.executeNow = function() {
