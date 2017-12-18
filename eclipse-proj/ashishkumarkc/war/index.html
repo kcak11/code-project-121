@@ -42,8 +42,8 @@
 			}
 			_customWindow.location.replace(url);
 		}
-		if (("" + _customWindow.location).indexOf("nooverride=true") == -1 && window.isMobileDevice && ("" + _customWindow.location.hostname).toLowerCase() === "www.ashishkumarkc.com" && _customWindow.location.href.indexOf("mobile=true")===-1) {
-			var customSuffix = (renderViaKcak11) ? "/?mobile=true&rendervia=kcak11" : ""
+		if (("" + _customWindow.location).indexOf("nooverride=true") === -1 && window.isMobileDevice && ("" + _customWindow.location.hostname).toLowerCase() === "www.ashishkumarkc.com" && _customWindow.location.href.indexOf("mobile=true") === -1) {
+			var customSuffix = (renderViaKcak11) ? "/?mobile=true&rendervia=kcak11" : "/?mobile=true";
 			_customWindow.location.replace(_customWindow.location.protocol+"//www.ashishkumarkc.com" + customSuffix);
 		}
 	</script>
