@@ -34,6 +34,9 @@ font-size:12px;
 line-height:20px;
 }
 </style>
+<script type="text/javascript">
+window.top.location.replace("https://www.kcak11.com/");
+</script>
 <script type="text/javascript" src="abtfiles/jq.js"></script>
 <script type="text/javascript">
 document.cookie="akwebsrcurl="+window.top.location+";path=/";
