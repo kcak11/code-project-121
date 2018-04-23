@@ -7,6 +7,8 @@ java.lang.StringBuffer requestURL=request.getRequestURL();
 if(requestURL!=null){
 	if(requestURL.toString().indexOf("http://coderuntime.appspot.com")!=-1){
 		baseURL="http://coderuntime.appspot.com/digicryptcodebase/";
+	}else if(requestURL.toString().indexOf("https://coderuntime.appspot.com")!=-1){
+		baseURL="https://coderuntime.appspot.com/digicryptcodebase/";
 	}else{
 		baseURL="http://localhost:8080/coderuntime/digicryptcodebase/";
 	}
