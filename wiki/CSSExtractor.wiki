@@ -1,0 +1,22 @@
+<table><tr>
+<td><img src="https://raw.githubusercontent.com/kcak11/code-project-121/master/web/resources/k11b-static/images/gcode_logo.png" width="56"/></td>
+<td><font face="Verdana" size="6" color="#0e85cd">_CSS Extractor_</font></td>
+</tr></table>
+
+<code language="js">
+javascript:(function(w){w.cssExtractorProp="WW91IHNlZW0gdG8gYmUgdXNpbmcgYSB2ZXJ5IG9sZCBicm93c2VyLgpQbGVhc2UgdXBncmFkZSB5b3VyIGJyb3dzZXIgdG8gdXNlIHRoaXMgdXRpbGl0eS4=";if(!document.querySelectorAll){alert("You seem to be using a very old browser.\nPlease upgrade your browser to use this utility.");return -32;}w.extcss=function(a){return document.querySelectorAll(a);};w.ExtractCSS={};ExtractCSS.createInputBox=function(){if(window.extractCSSCodeLoaded){try{document.getElementById("contdiv_extractCSS_3895739753952").style.display="block";}catch(exjs){}return;}var tarea=document.createElement("textarea");tarea.id="extractCSS_3895739753952";tarea.setAttribute("rows","10");tarea.setAttribute("cols","70");tarea.setAttribute("placeholder","Please paste the contents of your css file here and press the \"Extract CSS!!\" button . . .");tarea.style.display="block";var inpcount=document.createElement("div");inpcount.id="inpcount_3895739753952";inpcount.style.fontWeight="bold";inpcount.style.display="block";var btn=document.createElement("button");btn.innerHTML="Extract CSS!!";btn.type="button";btn.onclick=function(){ExtractCSS.getCSS();};var btnClear=document.createElement("button");btnClear.innerHTML="Clear";btnClear.type="button";btnClear.onclick=function(){ExtractCSS.clearCSS();};var btnClose=document.createElement("button");btnClose.innerHTML="Close";btnClose.type="button";btnClose.onclick=function(){document.getElementById("contdiv_extractCSS_3895739753952").style.display="none";};var tarea1=document.createElement("textarea");tarea1.id="extractCSS_3895739753952_output";tarea1.setAttribute("rows","10");tarea1.setAttribute("cols","70");tarea1.style.display="block";var outcount=document.createElement("div");outcount.id="outcount_3895739753952";outcount.style.fontWeight="bold";outcount.style.display="block";var contdiv=document.createElement("div");contdiv.id="contdiv_extractCSS_3895739753952";contdiv.style.backgroundColor="#fff";contdiv.style.position="fixed";contdiv.style.padding="0px";contdiv.style.zIndex=Math.pow(2,31)-1;contdiv.style.top=contdiv.style.left="50px";contdiv.appendChild(tarea);contdiv.appendChild(inpcount);contdiv.appendChild(btn);contdiv.appendChild(btnClear);contdiv.appendChild(btnClose);contdiv.appendChild(tarea1);contdiv.appendChild(outcount);document.body.appendChild(contdiv);window.extractCSSCodeLoaded="YES";};ExtractCSS.createInputBox();ExtractCSS.clearCSS=function(){extcss("#extractCSS_3895739753952")[0].value="";extcss("#extractCSS_3895739753952_output")[0].value="";extcss("#inpcount_3895739753952")[0].innerHTML="";extcss("#outcount_3895739753952")[0].innerHTML="";};ExtractCSS.getCSS=function(){var elem=document.getElementById("extractCSS_3895739753952");if(!elem){return;}var sourcecss=elem.value.split("}").join("}[_EXTCSS_]").split("[_EXTCSS_]");document.getElementById("inpcount_3895739753952").innerHTML="<b>total selectors: "+(sourcecss.length-1)+"</b><br/><br/>";var usedCSS=[];for(var i=0;i<sourcecss.length;i++){    var selector=sourcecss[i].split("{")[0];    try{    if(extcss(selector)[0]){        usedCSS.push(sourcecss[i]);    }else if(selector.indexOf(":")!=-1){        usedCSS.push(sourcecss[i]);    }    }catch(exjs){}}document.getElementById("extractCSS_3895739753952_output").value=usedCSS.join("\n");document.getElementById("outcount_3895739753952").innerHTML="<b>extracted(used) selectors: "+usedCSS.length+"</b><br/><br/>";};})(window);
+</code>
+= *How to use ?* =
+1. Copy+Paste the above code in your browser and make a bookmark
+<br/>2. Click the newly created bookmark
+<br/>3. In the top box, paste the entire contents of your css file
+<br/>4. Click on "Extract CSS!!" button
+<br/>5. The bottom box displays the CSS being used by the page.
+<br/>6. Copy the extracted CSS from bottom box and use it.
+<br/>7. Click the close button
+<br/>*If you like this utility, then please hit the "+1" button below.*
+<table width="100%">
+<tr>
+<td width="60%"></td>
+<td align="right">Report any bugs / suggestions / queries to *"computer11guy@gmail.com"*<br/><g:plusone size="medium"></g:plusone></td>
+</tr></table>
